@@ -32,7 +32,7 @@ font-style: normal;
 font-weight: 700;
 line-height: 40px; /* 125% */
 text-transform: uppercase;
-margin-top: 200px;
+margin-top: 100px;
 }
 
 .FontGeneral{
@@ -43,6 +43,18 @@ font-style: normal;
 font-weight: 400;
 line-height: 40px; /* 142.857% */
 }
+
+.FontSkills{
+color: #000;
+font-family: League Spartan;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 120% */
+text-transform: uppercase;
+margin-left: 5px;
+}
+
 
 /* DESKTOP MEDIA STYLES */
 

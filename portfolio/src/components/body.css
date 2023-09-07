@@ -17,7 +17,6 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    /* background-color: #000; */
     width: 100%;
     height: 60vh;
     margin-top: 100px;
@@ -52,7 +51,6 @@ body{
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
-      /* background-color: #000; */
       width: 90%;
       height: 60vh;
       margin: 100px 5% 0px 5%;
@@ -73,7 +71,6 @@ body{
       display: flex;
       flex-direction: column;
       justify-content: center;
-      
       width: 60%;
       height: 60vh;
     }
@@ -87,9 +84,7 @@ body{
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
-      /* background-color: #000; */
       width: 90%;
-      height: 60vh;
       margin: 100px 5% 0px 5%;
     }
     
@@ -99,17 +94,13 @@ body{
       align-content: center;
       justify-content: center;
       width: 80%;
-      height: 40vh;
       margin-bottom: 50px;
-      /* background-color: aliceblue; */
     }
     
     .RightContainer{
       display: flex;
       flex-direction: column;
       justify-content: center;
-      /* background-color: antiquewhite; */
       width: 80%;
-      height: 60vh;
     }
   }

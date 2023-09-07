@@ -4,11 +4,26 @@
   height: 64px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  margin-top: 45px;
+ 
   /* style */
   border-radius: 10px;
   background: #ECE6DB;
   box-shadow: -10px 10px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.Middle{
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 3px;
+
+}
+
+#logo{
+  width: 41px;
+  height: 41px;
+  padding-left: 10px;
 }
 
 .Bar{

@@ -20,7 +20,22 @@ export default function Skills(){
        </div>
 
       <div className="RightContainer">
-      <SkillBox icon='html'/>
+      <SkillBox 
+      logo='html'
+      name='html5'
+      percentage='80'/>
+      <SkillBox 
+      logo='css'
+      name='css3'
+      percentage='70'/>
+      <SkillBox 
+      logo='js'
+      name='javascript'
+      percentage='60'/>
+      <SkillBox 
+      logo='react'
+      name='react'
+      percentage='50'/>
        </div>
 
     </div>
