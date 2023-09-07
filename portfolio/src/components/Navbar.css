@@ -1,0 +1,162 @@
+body{
+  margin: auto;
+}
+
+.Logo{
+  width: 18%;
+  display: flex;
+  position: fixed;
+  z-index: 1;
+}
+
+.DesktopNavbar{
+/* layout */
+  width: 100vw;
+  height: 70px;
+  padding-right: 10%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+/* style */
+  border-right: 4px solid #F49E23;
+  border-bottom: 4px solid #F49E23;
+  background: #D9D9D9;
+  box-sizing: border-box;
+  transition: 0.4s ease-in-out;
+}
+
+#navbar{
+  display: flex;
+  flex-direction: row;
+  
+}
+
+#navbar li{
+  display: inline;
+  padding-right: 46px;
+  text-decoration: none;
+
+}
+
+#navbar li a{
+  text-decoration: none;
+  transition: 0.6s;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+  color: #F49E23;
+  
+}
+
+#navbar li a:hover::after,
+#navbar li a.active:after{
+  content: "";
+  box-shadow: -2px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 50px;
+  height: 2px;
+  background-color: #F49E23;
+  display: flex;
+  position: fixed;
+  
+}
+
+
+
+/* DESKTOP MEDIA STYLES */
+
+/* @media screen and (max-width:1024px) */
+@media screen and (min-width:1025px) {
+  #icon_menu{
+    display: none;
+  }
+  #icon_close{
+    display: none;
+  }
+}
+
+/* TABLET MEDIA STYLES */
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+  #icon_menu{
+    display: none;
+  }
+  #icon_close{
+    display: none;
+  }
+.Logo{
+  width: 25%;
+}
+}
+
+
+/* MOBILE MEDIA STYLES */
+
+@media screen and (max-width:767px) {
+  .Logo{
+    width: 70%;
+  }
+  #navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding-bottom: 20%;
+    position: fixed;
+    box-sizing: border-box;
+    top: -70vh;
+    left: 0px;
+    width: 200px;
+    height: 70vh;
+    background-color: #D9D9D9;
+    transition: 0.3s ease-in-out;
+    border-right: 4px solid #F49E23;
+    border-bottom: 4px solid #F49E23;
+  }
+
+  #navbar.active{
+    top: 0vh;
+  }
+  #navbar li{
+    margin-bottom: 25px;
+  }
+
+  .DesktopNavbar.active{
+
+    left: -100vw;
+  }
+  
+  #icon_menu{
+    color: #000;
+    font-size: 40px;
+    cursor: pointer;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 700,
+    'GRAD' 0,
+    'opsz' 58
+  }
+
+  #icon_close{
+    position: fixed;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+    top: -40vh;
+    left: 150px;
+    width: 70vw;
+    height: 140vh;
+    color: #000;
+    font-size: 30px;
+    cursor: pointer;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 700,
+    'GRAD' 0,
+    'opsz' 58
+  }
+}
+
+
