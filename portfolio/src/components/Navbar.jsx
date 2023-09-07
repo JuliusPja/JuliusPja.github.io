@@ -32,6 +32,9 @@ export default function Navbar(){
                       <Link to="/about" className="FontNavbar">About</Link>
                     </li>
                     <li>
+                      <Link to="/skills" className="FontNavbar">Skills</Link>
+                    </li>
+                    <li>
                       <Link to="/projects" className="FontNavbar">Projects</Link>
                     </li>
                     <li>

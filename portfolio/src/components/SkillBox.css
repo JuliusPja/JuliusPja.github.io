@@ -1,0 +1,23 @@
+.Main{
+  /* layout */
+  width: 100%;
+  height: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* style */
+  border-radius: 10px;
+  background: #ECE6DB;
+  box-shadow: -10px 10px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.Bar{
+    /* layout */
+  width: 80%;
+  height: 6px;
+  display: flex;
+
+  /* style */
+  border-radius: 0px 10px;
+  background: #F49E23;
+}
