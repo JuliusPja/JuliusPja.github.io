@@ -17,7 +17,7 @@ export default function Navbar(){
       
        {/* DESKTOP NAVBAR */}
 
-      <div id="desktop">
+      <div id="header">
         <img className="Logo" src="./assets/Logo.png" alt="Logo" />
               <nav className={menu.clicked ? 
               "DesktopNavbar active" : "DesktopNavbar"}>

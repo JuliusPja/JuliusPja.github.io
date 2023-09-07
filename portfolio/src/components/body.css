@@ -1,0 +1,115 @@
+body{
+  margin: auto;
+}
+
+/* -------------Flex containers CSS---------- */
+
+
+
+
+/* DESKTOP MEDIA STYLES */
+
+
+@media screen and (min-width:1025px) {
+
+  .SectionContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #000; */
+    width: 100%;
+    height: 60vh;
+    margin-top: 100px;
+  }
+
+  .LeftContainer{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 20%;
+    height: 50vh;
+   
+  }
+  
+  .RightContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5%;
+    width: 30%;
+    height: 50vh;
+  }
+}
+
+  /* TABLET MEDIA STYLES */
+  
+  @media screen and (min-width:768px) and (max-width:1024px) {
+
+    .SectionContainer{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      /* background-color: #000; */
+      width: 90%;
+      height: 60vh;
+      margin: 100px 5% 0px 5%;
+    }
+    
+    .LeftContainer{
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      width: 30%;
+      height: 60vh;
+      margin-right: 5%;
+      
+    }
+    
+    .RightContainer{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      
+      width: 60%;
+      height: 60vh;
+    }
+  }
+  /* MOBILE MEDIA STYLES */
+  
+  @media screen and (max-width:767px) {
+
+    .SectionContainer{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      /* background-color: #000; */
+      width: 90%;
+      height: 60vh;
+      margin: 100px 5% 0px 5%;
+    }
+    
+    .LeftContainer{
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      width: 80%;
+      height: 40vh;
+      margin-bottom: 50px;
+      /* background-color: aliceblue; */
+    }
+    
+    .RightContainer{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      /* background-color: antiquewhite; */
+      width: 80%;
+      height: 60vh;
+    }
+  }

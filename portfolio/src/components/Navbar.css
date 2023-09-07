@@ -1,5 +1,6 @@
-body{
-  margin: auto;
+#header{
+  position: fixed;
+  top: 0;
 }
 
 .Logo{
@@ -66,7 +67,6 @@ body{
 
 /* DESKTOP MEDIA STYLES */
 
-/* @media screen and (max-width:1024px) */
 @media screen and (min-width:1025px) {
   #icon_menu{
     display: none;
