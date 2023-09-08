@@ -19,9 +19,9 @@ export default function Projects(){
   {/* ===============FIRST PROJECT==================== */}
 
   <div className="First">
-    <div id="left">
-      <div id="btn_left" onClick={handleClick}>
-        
+    <div id="left"
+        style={{backgroundImage: `url('./assets/abstract_coding.jpg')`}}>
+      <div id="btn_left" onClick={handleClick}>        
         <img id="btn_arrow" src="./assets/icons8-previous-64.png" alt="previous" />
       </div>
     </div>

@@ -1,0 +1,66 @@
+.ContactContainer{
+display: flex;
+align-items: center;
+justify-content: center;
+height: 50vh;
+}
+
+.FormContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  width: 481px;
+}
+
+.Box{
+  border-radius: 10px;
+  border: 1px solid #F49E23;
+  width: 461px;
+  height: 51px;
+  padding: 0px 10px;
+  margin-bottom: 10px;
+
+}
+
+.L{
+  height: 260px;
+}
+
+.Button{
+  width: 228px;
+  height: 50px;
+  border-radius: 10px;
+  border: 2px solid #F49E23;
+  background: #FFF0D2;
+  cursor: pointer;
+}
+
+form::placeholder{
+  margin-left: 10px;
+}
+
+
+
+/* MOBILE MEDIA STYLES */
+
+@media screen and (max-width:767px) {
+  .ContactContainer{
+    height: 70vh;
+  }
+
+  .FormContainer{
+    width: 85%;
+    align-items: center;
+  }
+
+  .Box{
+    width: 85%;
+    height: 51px;
+    padding: 0px 10px;
+    margin-bottom: 10px;
+  }
+  .L{
+    height: 260px;
+  }
+}
