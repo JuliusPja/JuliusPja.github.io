@@ -1,0 +1,319 @@
+/* -------------Flex containers CSS---------- */
+
+/* DESKTOP MEDIA STYLES */
+
+@media screen and (min-width:1025px) {
+
+.flip_container{
+  perspective: 1000px;
+}
+
+.Projects{
+  width: 100%;
+  height: 60vh;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.First, .Second{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 60vh;
+  margin: 100px 5% 0px 5%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.Second{
+  transform: rotateY(180deg);
+}
+
+.flipped .Projects {
+  transform: rotateY(180deg);
+}
+
+#left{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 30%;
+  height: 390px;
+  border-radius: 100px 0px 0px 100px;
+  border-top: 3px solid #F49E23;
+  border-bottom: 3px solid #F49E23;
+  border-left: 3px solid #F49E23;
+  background-color: #000;
+ 
+  }
+
+#right{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 30%;
+  height: 390px;
+  border-radius: 0px 100px 100px 0px;
+  border-top: 3px solid #F49E23;
+  border-right: 3px solid #F49E23;
+  border-bottom: 3px solid #F49E23;
+  background: #FFF;
+  }
+
+  #btn_left{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  height: 62px;
+  border-radius: 100px 0px 0px 100px;
+  border-top: 3px solid #F49E23;
+  border-bottom: 3px solid #F49E23;
+  border-left: 3px solid #F49E23;
+  background: #FFF7E9;
+  transition: 0.4s;
+  cursor: pointer;
+  }
+
+  #btn_right{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  height: 62px;
+  border-radius: 0px 100px 100px 0px;
+  border-top: 3px solid #F49E23;
+  border-right: 3px solid #F49E23;
+  border-bottom: 3px solid #F49E23;
+  background: #FFF0D2;
+  transition: 0.6s;
+  cursor: pointer;
+  }
+
+  #btn_right:hover,
+  #btn_left:hover{
+    background: #000;
+  }
+
+  #btn_arrow{
+    width: 50px;
+    height: 50px;
+  }
+}
+/* TABLET MEDIA STYLES */
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+
+  .flip_container{
+    perspective: 1000px;
+  }
+  
+  .Projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+  }
+  
+  .First, .Second{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    margin: 0px 5% 0px 5%;
+    position: absolute;
+    backface-visibility: hidden;
+
+  }
+
+  .Second{
+    transform: rotateX(180deg);
+  }
+  
+  .flipped .Projects {
+    transform: rotateX(180deg);
+  }
+  
+  #left{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+    height: 390px;
+    border-radius: 100px 0px 0px 100px;
+    border-top: 3px solid #F49E23;
+    border-bottom: 3px solid #F49E23;
+    border-left: 3px solid #F49E23;
+    background-color: #000;
+    transform: rotate(90deg);
+    }
+  
+  #right{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+    height: 390px;
+    border-radius: 0px 100px 100px 0px;
+    border-top: 3px solid #F49E23;
+    border-right: 3px solid #F49E23;
+    border-bottom: 3px solid #F49E23;
+    background: #FFF;
+    transform: rotate(90deg);
+    }
+  
+    #btn_left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 62px;
+    border-radius: 100px 0px 0px 100px;
+    border-top: 3px solid #F49E23;
+    border-bottom: 3px solid #F49E23;
+    border-left: 3px solid #F49E23;
+    background: #FFF7E9;
+    transition: 0.4s;
+    cursor: pointer;
+    }
+  
+    #btn_right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 62px;
+    border-radius: 0px 100px 100px 0px;
+    border-top: 3px solid #F49E23;
+    border-right: 3px solid #F49E23;
+    border-bottom: 3px solid #F49E23;
+    background: #FFF0D2;
+    transition: 0.6s;
+    cursor: pointer;
+    }
+  
+    #btn_right:hover,
+    #btn_left:hover{
+      background: #000;
+    }
+  
+    #btn_arrow{
+      width: 50px;
+      height: 50px;
+    }
+}
+/* MOBILE MEDIA STYLES */
+
+@media screen and (max-width:767px) {
+
+  .flip_container{
+    perspective: 1000px;
+  }
+  
+  .Projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+   
+  }
+  
+  .First, .Second{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    margin: 0px 5% 0px 5%;
+    position: absolute;
+    backface-visibility: hidden;
+
+  }
+
+  .Second{
+    transform: rotateX(180deg);
+  }
+  
+  .flipped .Projects {
+    transform: rotateX(180deg);
+  }
+  
+  #left{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 95%;
+    height: 390px;
+    border-radius: 100px 0px 0px 100px;
+    border-top: 3px solid #F49E23;
+    border-bottom: 3px solid #F49E23;
+    border-left: 3px solid #F49E23;
+    background-color: #000;
+    transform: rotate(90deg);
+    }
+  
+  #right{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 95%;
+    height: 390px;
+    border-radius: 0px 100px 100px 0px;
+    border-top: 3px solid #F49E23;
+    border-right: 3px solid #F49E23;
+    border-bottom: 3px solid #F49E23;
+    background: #FFF;
+    transform: rotate(90deg);
+    }
+  
+    #btn_left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 62px;
+    border-radius: 100px 0px 0px 100px;
+    border-top: 3px solid #F49E23;
+    border-bottom: 3px solid #F49E23;
+    border-left: 3px solid #F49E23;
+    background: #FFF7E9;
+    transition: 0.4s;
+    cursor: pointer;
+    }
+  
+    #btn_right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 62px;
+    border-radius: 0px 100px 100px 0px;
+    border-top: 3px solid #F49E23;
+    border-right: 3px solid #F49E23;
+    border-bottom: 3px solid #F49E23;
+    background: #FFF0D2;
+    transition: 0.6s;
+    cursor: pointer;
+    }
+  
+    #btn_right:hover,
+    #btn_left:hover{
+      background: #000;
+    }
+  
+    #btn_arrow{
+      width: 50px;
+      height: 50px;
+    }
+}

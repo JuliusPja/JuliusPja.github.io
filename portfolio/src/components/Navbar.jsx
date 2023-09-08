@@ -15,8 +15,7 @@ export default function Navbar(){
   return(
     <>
       
-       {/* DESKTOP NAVBAR */}
-
+ 
       <div id="header">
         <img className="Logo" src="./assets/Logo.png" alt="Logo" />
               <nav className={menu.clicked ? 
