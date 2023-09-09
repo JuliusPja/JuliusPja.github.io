@@ -1,14 +1,14 @@
 #header{
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 20;
 }
 
 .Logo{
   width: 18%;
   display: flex;
   position: fixed;
-  z-index: 1;
+  z-index: 20;
 }
 
 .DesktopNavbar{

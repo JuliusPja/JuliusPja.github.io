@@ -1,5 +1,22 @@
 /* -------------Flex containers CSS---------- */
 
+#btn_right:hover,
+#btn_middle:hover,
+#btn_left:hover{
+  background: #000;
+}
+
+#btn_arrow{
+  width: 50px;
+  height: 50px;
+}
+
+.ProjImg{
+  background-size: cover;
+  background-image: url('/public/assets/abstract_coding.jpg')
+}
+
+
 /* DESKTOP MEDIA STYLES */
 
 @media screen and (min-width:1025px) {
@@ -9,8 +26,12 @@
 }
 
 .Projects{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  height: 60vh;
+  height: 390px;
+  margin: 100px 0px 200px;
   transform-style: preserve-3d;
   transition: transform 0.5s;
 }
@@ -20,8 +41,8 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 90%;
-  height: 60vh;
+  width: 1070px;
+  height: 390px;
   margin: 100px 5% 0px 5%;
   position: absolute;
   backface-visibility: hidden;
@@ -39,7 +60,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  width: 30%;
+  width: 535px;
   height: 390px;
   border-radius: 100px 0px 0px 100px;
   background-color: #000;
@@ -48,53 +69,55 @@
 
 #right{
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
   align-items: center;
-  width: 30%;
+  width: 535px;
   height: 390px;
   border-radius: 0px 100px 100px 0px;
   background: #FFF;
   }
 
-  #btn_left{
+#btn_right{
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 25%;
-  height: 62px;
-  border-radius: 100px 0px 0px 100px;
+  width: 90px;
+  height: 95px;
+  border-radius: 0px 100px 0px 0px;
   border-top: 3px solid #F49E23;
-  border-bottom: 3px solid #F49E23;
-  border-left: 3px solid #F49E23;
-  background: #FFF7E9;
-  transition: 0.4s;
-  cursor: pointer;
-  }
-
-  #btn_right{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 25%;
-  height: 62px;
-  border-radius: 0px 100px 100px 0px;
-  border-top: 3px solid #F49E23;
-  border-right: 3px solid #F49E23;
-  border-bottom: 3px solid #F49E23;
+  border-right: 1px solid #F49E23;
   background: #FFF0D2;
   transition: 0.6s;
   cursor: pointer;
   }
+  
+#btn_middle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 200px;
+  border-top: 1px solid #F49E23;
+  border-right: 1px solid #F49E23;
+  border-bottom: 1px solid #F49E23;
+  background: #FFF0D2;
+  cursor: pointer;
+}
 
-  #btn_right:hover,
-  #btn_left:hover{
-    background: #000;
+#btn_left{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 95px;
+  border-radius: 0px 0px 100px 0px;
+  border-right: 1px solid #F49E23;
+  border-bottom: 3px solid #F49E23;
+  background: #FFF0D2;
+  transition: 0.4s;
+  cursor: pointer;
   }
 
-  #btn_arrow{
-    width: 50px;
-    height: 50px;
-  }
 }
 /* TABLET MEDIA STYLES */
 
@@ -109,18 +132,18 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    height: 60vh;
     transform-style: preserve-3d;
     transition: transform 0.5s;
   }
   
   .First, .Second{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100vh;
+    height: 60vh;
     margin: 0px 5% 0px 5%;
     position: absolute;
     backface-visibility: hidden;
@@ -128,11 +151,11 @@
   }
 
   .Second{
-    transform: rotateX(180deg);
+    transform: rotateY(180deg);
   }
   
   .flipped .Projects {
-    transform: rotateX(180deg);
+    transform: rotateY(180deg);
   }
   
   #left{
@@ -143,7 +166,7 @@
     height: 390px;
     border-radius: 100px 0px 0px 100px;
     background-color: #000;
-    transform: rotate(90deg);
+   
     }
   
   #right{
@@ -154,48 +177,50 @@
     height: 390px;
     border-radius: 0px 100px 100px 0px;
     background: #FFF;
-    transform: rotate(90deg);
-    }
-  
-    #btn_left{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 25%;
-    height: 62px;
-    border-radius: 100px 0px 0px 100px;
-    border-top: 3px solid #F49E23;
-    border-bottom: 3px solid #F49E23;
-    border-left: 3px solid #F49E23;
-    background: #FFF7E9;
-    transition: 0.4s;
-    cursor: pointer;
+   
     }
   
     #btn_right{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 25%;
-    height: 62px;
-    border-radius: 0px 100px 100px 0px;
-    border-top: 3px solid #F49E23;
-    border-right: 3px solid #F49E23;
-    border-bottom: 3px solid #F49E23;
-    background: #FFF0D2;
-    transition: 0.6s;
-    cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      height: 95px;
+      border-radius: 0px 100px 0px 0px;
+      border-top: 3px solid #F49E23;
+      border-right: 1px solid #F49E23;
+      background: #FFF0D2;
+      transition: 0.6s;
+      cursor: pointer;
+      }
+      
+    #btn_middle{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      height: 200px;
+      border-top: 1px solid #F49E23;
+      border-right: 1px solid #F49E23;
+      border-bottom: 1px solid #F49E23;
+      background: #FFF0D2;
+      cursor: pointer;
     }
-  
-    #btn_right:hover,
-    #btn_left:hover{
-      background: #000;
-    }
-  
-    #btn_arrow{
-      width: 50px;
-      height: 50px;
-    }
+    
+    #btn_left{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      height: 95px;
+      border-radius: 0px 0px 100px 0px;
+      border-right: 1px solid #F49E23;
+      border-bottom: 3px solid #F49E23;
+      background: #FFF0D2;
+      transition: 0.4s;
+      cursor: pointer;
+      }
+
 }
 /* MOBILE MEDIA STYLES */
 
@@ -203,27 +228,29 @@
 
   .flip_container{
     perspective: 1000px;
+    margin-top: 100px;
   }
   
   .Projects{
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100vh;
+    justify-content: center;
+    width: 80%;
+    margin-left: 10%;
+    height: 120vh;
     transform-style: preserve-3d;
     transition: transform 0.5s;
-   
   }
   
+  /* Front and Back full size content  */
+
   .First, .Second{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 100vh;
-    margin: 0px 5% 0px 5%;
+    width: 80%;
+    height: 120vh;
     position: absolute;
     backface-visibility: hidden;
 
@@ -241,8 +268,8 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: 95%;
-    height: 390px;
+    width: 535px;
+    height: 375px;
     border-radius: 100px 0px 0px 100px;
     background-color: #000;
     transform: rotate(90deg);
@@ -252,50 +279,72 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 95%;
-    height: 390px;
+    width: 535px;
+    height: 375px;
     border-radius: 0px 100px 100px 0px;
     background: #FFF;
     transform: rotate(90deg);
     }
-  
-    #btn_left{
+
+  .TextContainer{
+    display: flex;
+    align-items: center;
+    width: 375px;
+    height: 290px;
+   
+
+  }
+
+
+  #btn_right{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 25%;
-    height: 62px;
-    border-radius: 100px 0px 0px 100px;
+    width: 90px;
+    height: 95px;
+    border-radius: 0px 100px 0px 0px;
     border-top: 3px solid #F49E23;
-    border-bottom: 3px solid #F49E23;
-    border-left: 3px solid #F49E23;
-    background: #FFF7E9;
-    transition: 0.4s;
-    cursor: pointer;
-    }
-  
-    #btn_right{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 25%;
-    height: 62px;
-    border-radius: 0px 100px 100px 0px;
-    border-top: 3px solid #F49E23;
-    border-right: 3px solid #F49E23;
-    border-bottom: 3px solid #F49E23;
+    border-right: 1px solid #F49E23;
     background: #FFF0D2;
     transition: 0.6s;
     cursor: pointer;
     }
+    
+  #btn_middle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 200px;
+    border-top: 1px solid #F49E23;
+    border-right: 1px solid #F49E23;
+    border-bottom: 1px solid #F49E23;
+    background: #FFF0D2;
+    cursor: pointer;
+  }
   
-    #btn_right:hover,
-    #btn_left:hover{
-      background: #000;
+  #git_logo{
+  transform: rotate(-90deg);
+  }
+
+  .ProjImg{
+    background-image: url('/public/assets/abstract_coding_rotated.jpg')
+  }
+
+  #btn_left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 95px;
+    border-radius: 0px 0px 100px 0px;
+    border-right: 1px solid #F49E23;
+    border-bottom: 3px solid #F49E23;
+    background: #FFF0D2;
+    transition: 0.4s;
+    cursor: pointer;
     }
-  
-    #btn_arrow{
-      width: 50px;
-      height: 50px;
-    }
+
+ 
+
 }

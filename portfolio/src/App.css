@@ -76,7 +76,25 @@ line-height: 24px; /* 120% */
 /* MOBILE MEDIA STYLES */
 
 @media screen and (max-width:767px) {
+  .FontGeneral{
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 24px; /* 142.857% */
+    }
+
   .FontH1{
     margin-bottom: 0px;
   }
+  .FontProjects{
+    color: #000;
+    font-family: League Spartan;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 142.857% */
+    transform: rotate(-90deg);
+    margin: 0px 10px;
+  
+    
+   }
 }
