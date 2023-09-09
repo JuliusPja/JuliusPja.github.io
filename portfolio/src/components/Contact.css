@@ -49,6 +49,11 @@ textarea::placeholder{
   border: 2px solid #F49E23;
   background: #FFF0D2;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+.Button:hover{
+  background-color: #000;
 }
 
 /* MOBILE MEDIA STYLES */
