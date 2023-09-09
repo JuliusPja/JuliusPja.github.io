@@ -1,0 +1,29 @@
+#icon{
+  display: flex;
+  flex-direction: row;
+}
+
+#linkedin_icon_container{
+  height: 50px;
+  width: 50px;
+  margin-right: 32px;
+  background-image: url("/public/assets/icons8-linked-in-black-50.png");
+  background-size: cover;
+  transition: 0.3s;
+}
+
+#linkedin_icon_container:hover{
+  background-image: url("/public/assets/icons8-linked-in-50.png");
+}
+
+#github_icon_container{
+  height: 50px;
+  width: 50px;
+  background-image: url("/public/assets/icons8-github-black-64.png");
+  background-size: cover;
+  transition: 0.3s;
+}
+
+#github_icon_container:hover{
+  background-image: url("/public/assets/icons8-github-64.png");
+}
