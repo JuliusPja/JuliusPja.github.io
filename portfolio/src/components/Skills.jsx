@@ -3,7 +3,7 @@ import SkillBox from "./SkillBox"
 
 export default function Skills(){
   return(
-    <>
+    <section id="skills">
     <h2 className="FontH2">skills</h2>
     <div className="SectionContainer">
       <div 
@@ -39,6 +39,6 @@ export default function Skills(){
        </div>
 
     </div>
-    </>
+    </section>
   )
 }

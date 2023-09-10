@@ -11,7 +11,7 @@ export default function Projects(){
   };
 
   return(
- <>
+ <section id="projects">
   <h2 className="FontH2">projects</h2>
   <div className={`flip_container ${isFlipped && 'flipped'}`}>
   
@@ -88,6 +88,6 @@ export default function Projects(){
         {/* Second div END */}
   </div>
   </div>
- </>
+ </section>
 )
 }

@@ -3,8 +3,8 @@ import ContactIcons from "./ContactIcons"
 
 export default function Hero(){
   return(
-    <div 
-    style={{marginTop: "300px"}}
+    <section 
+    id="hero"
     className="SectionContainer">
       <div className="LeftContainer">
         
@@ -20,6 +20,6 @@ export default function Hero(){
       </div>
 
 
-    </div>
+    </section>
   )
 }
