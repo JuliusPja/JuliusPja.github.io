@@ -21,25 +21,30 @@ export default function Projects(){
 
   <div className="First">
 
-    <div id="left" className="ProjImg">
+    <div id="left" className="ProjOneImg">
     </div>
 
     <div id="right">
 
       <div className="TextContainer">
-       <p className="FontProjects" style={{backgroundColor:'#E8D5B0'}}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-        Neque, error. Asperiores, ullam porro! Qui sapiente provident laborum quasi id rerum 
-        ullam est dolorum impedit, iusto iure quaerat, repellendus, omnis hic.
+       <p className="FontProjects"> 
+        <strong> Fitness Studio Website</strong> <br /><br />
+        This project resulted from a time-constrained Bootstrap 
+        workshop group effort. It significantly enhanced my understanding 
+        of the library's practicality and time-saving capabilities.
+        <br /><br />
+        HTML, JavaScript, CSS, Bootstrap
+        <br /><br /><br />
+        <a href="https://grouphbwebsite.netlify.app" target="_blank">To the site</a>
         </p>
         </div>
 
-        {/* Buttons container div START*/}
       <div>
       <div id="btn_right" onClick={handleClick}>
       <img id="btn_arrow" src="./assets/icons8-next-64.png" alt="next" />
       </div>
 
-      <a id="btn_middle" href="">
+      <a id="btn_middle" href="https://github.com/JuliusPja/Bootstrap-workshop" target="_blank">
         <img id="git_logo" src="./assets/icons8-github-64.png" alt="github" />
       </a>
 
@@ -47,33 +52,37 @@ export default function Projects(){
       <img id="btn_arrow" src="./assets/icons8-previous-64.png" alt="previous" />
       </div>
       </div>
-        {/* Buttons container div END */}
+
     </div>
   </div>
 
   {/* ===============SECOND PROJECT==================== */}
   <div className="Second">
-    <div id="left">
-
+    <div id="left" className="ProjTwoImg">
     </div>
     
     <div id="right">
 
       <div className="TextContainer">
-      <p className="FontProjects" style={{backgroundColor:'#E8D5B0'}}>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-        Neque, error. Asperiores, ullam porro! Qui sapiente provident laborum quasi id rerum 
-        ullam est dolorum impedit, iusto iure quaerat, repellendus, omnis hic.
+      <p className="FontProjects" >
+        <strong> QR_maze_runner</strong> 
+        <br /> <br /> 
+        QR_maze_runner is a capstone project completed during my SE bootcamp. 
+        It employs the Depth-First Search (DFS) algorithm to generate random 
+        layouts, allowing customization with width, height, and wall density 
+        parameters. The project continuously regenerates until a valid path 
+        from the starting point to the exit is found. 
+        <br /> <br />
+        Python, pygame.
         </p>
         </div>
 
-           {/* Buttons container div START*/}
       <div>
       <div id="btn_right" style={{backgroundColor:'#E8D5B0'}}>
       <img id="btn_arrow" src="./assets/icons8-next-64.png" alt="next" />
       </div>
 
-      <a id="btn_middle" href="">
+      <a id="btn_middle" href="https://github.com/JuliusPja/Maze-runner" target="_blank">
         <img id="git_logo" src="./assets/icons8-github-64.png" alt="github" />
       </a>
 
@@ -81,11 +90,11 @@ export default function Projects(){
       <img id="btn_arrow" src="./assets/icons8-previous-64.png" alt="previous" />
       </div>
       </div>
-         {/* Buttons container div END */}
+
     </div> 
-        {/* right div END */}
+   
   </div>
-        {/* Second div END */}
+
   </div>
   </div>
  </section>

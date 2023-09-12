@@ -9,7 +9,7 @@ export default function Navbar() {
 
   // Function to determine the active section
   const handleScroll = () => {
-    const sections = document.querySelectorAll('section');
+    const sections = document.querySelectorAll("section");
     const scrollPosition = window.scrollY;
 
     sections.forEach((section) => {
@@ -42,7 +42,9 @@ export default function Navbar() {
   return (
     <section id="home">
       <div id="header">
-        <img className="Logo" src="./assets/Logo.png" alt="Logo" />
+        <Link to="home" smooth={true} duration={500}>
+          <img className="Logo" src="./assets/Logo.png" alt="Logo" />
+        </Link>
         <nav
           className={menu.clicked ? "DesktopNavbar active" : "DesktopNavbar"}
         >
@@ -65,7 +67,9 @@ export default function Navbar() {
                 to="about"
                 smooth={true}
                 duration={500}
-                className={`FontNavbar ${activeSection === "about" && "active"}`}           
+                className={`FontNavbar ${
+                  activeSection === "about" && "active"
+                }`}
               >
                 About
               </Link>
@@ -75,7 +79,9 @@ export default function Navbar() {
                 to="skills"
                 smooth={true}
                 duration={500}
-                className={`FontNavbar ${activeSection === "skills" && "active"}`}
+                className={`FontNavbar ${
+                  activeSection === "skills" && "active"
+                }`}
               >
                 Skills
               </Link>
@@ -85,7 +91,9 @@ export default function Navbar() {
                 to="projects"
                 smooth={true}
                 duration={500}
-                className={`FontNavbar ${activeSection === "projects" && "active"}`}
+                className={`FontNavbar ${
+                  activeSection === "projects" && "active"
+                }`}
               >
                 Projects
               </Link>
@@ -95,7 +103,9 @@ export default function Navbar() {
                 to="contact"
                 smooth={true}
                 duration={500}
-                className={`FontNavbar ${activeSection === "contact" && "active"}`}
+                className={`FontNavbar ${
+                  activeSection === "contact" && "active"
+                }`}
               >
                 Contact
               </Link>

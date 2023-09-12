@@ -9,6 +9,7 @@
   display: flex;
   position: fixed;
   z-index: 20;
+  cursor: pointer;
 }
 
 .DesktopNavbar{
@@ -69,6 +70,7 @@
 /* DESKTOP MEDIA STYLES */
 
 @media screen and (min-width:1025px) {
+
   #icon_menu{
     display: none;
   }
@@ -86,6 +88,12 @@
   #icon_close{
     display: none;
   }
+
+  .DesktopNavbar{
+    padding-right: 0px;
+  }
+
+
 .Logo{
   width: 25%;
 }
