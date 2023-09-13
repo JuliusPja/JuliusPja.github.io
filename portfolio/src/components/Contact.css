@@ -1,0 +1,82 @@
+.ContactContainer{
+display: flex;
+align-items: center;
+justify-content: center;
+height: 50vh;
+}
+
+.FormContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  width: 481px;
+}
+
+.Box{
+  border-radius: 10px;
+  border: 1px solid #F49E23;
+  width: 461px;
+  height: 51px;
+  padding: 0px 10px;
+  margin-bottom: 10px;
+}
+
+.L{
+  height: 260px;
+}
+
+input, textarea{
+  margin-top: 10px;
+  caret-color: #F49E23;
+}
+
+
+input:focus,
+textarea:focus{
+  outline: 1px solid #F49E23;
+  background-color: #fff0d23f;
+}
+
+input::placeholder,
+textarea::placeholder{
+  color: #F49E23;
+}
+
+.Button{
+  width: 228px;
+  height: 50px;
+  border-radius: 10px;
+  border: 2px solid #F49E23;
+  background: #FFF0D2;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.Button:hover{
+  background-color: #000;
+}
+
+/* MOBILE MEDIA STYLES */
+
+@media screen and (max-width:767px) {
+  .ContactContainer{
+    height: 70vh;
+  }
+
+  .FormContainer{
+    width: 85%;
+    align-items: center;
+  }
+
+  .Box{
+    width: 85%;
+    height: 51px;
+    padding: 0px 10px;
+    margin-bottom: 10px;
+  }
+  .L{
+    height: 260px;
+    padding-top: 10px;
+  }
+}

@@ -1,0 +1,122 @@
+
+body{
+  margin: auto;
+}
+section{
+  padding-top: 200px;
+}
+
+#hero{
+  padding-top: 0;
+}
+
+/* -------------Flex containers CSS---------- */
+
+
+
+
+/* DESKTOP MEDIA STYLES */
+
+
+@media screen and (min-width:1025px) {
+
+  .SectionContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60vh;
+    margin-top: 100px;
+  }
+
+  .LeftContainer{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 20%;
+    height: 50vh;
+   
+  }
+  
+  .RightContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5%;
+    width: 30%;
+    height: 50vh;
+  }
+}
+
+  /* TABLET MEDIA STYLES */
+  
+  @media screen and (min-width:768px) and (max-width:1024px) {
+    
+
+    .SectionContainer{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      width: 90%;
+      height: 60vh;
+      margin: 100px 5% 0px 5%;
+    }
+    
+    .LeftContainer{
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      width: 30%;
+      height: 60vh;
+      margin-right: 5%;
+      
+    }
+    
+    .RightContainer{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 60%;
+      height: 60vh;
+    }
+  }
+  /* MOBILE MEDIA STYLES */
+  
+  @media screen and (max-width:767px) {
+
+    section{
+      padding-top: 100px;
+    }
+    #hero{
+      padding-top: 100px;
+    }
+
+    .SectionContainer{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      width: 90%;
+      margin: 0px 5% 0px 5%;
+    }
+    
+    .LeftContainer{
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      width: 80%;
+      margin-bottom: 50px;
+    }
+    
+    .RightContainer{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 80%;
+    }
+  }

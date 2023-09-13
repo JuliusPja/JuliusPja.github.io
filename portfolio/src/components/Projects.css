@@ -1,0 +1,367 @@
+/* -------------Flex containers CSS---------- */
+
+#btn_right:hover,
+#btn_middle:hover,
+#btn_left:hover{
+  background: #000;
+}
+
+#btn_arrow{
+  width: 50px;
+  height: 50px;
+}
+
+.ProjOneImg{
+  background-size: cover;
+  background-position: center;
+  background-image: url('/public/assets/fitness_studio.png')
+}
+
+.ProjTwoImg{
+  background-size: 450px 100%;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-image: url('/public/assets/maze_level_3.png')
+}
+
+
+/* DESKTOP MEDIA STYLES */
+
+@media screen and (min-width:1025px) {
+
+.flip_container{
+  perspective: 1000px;
+}
+
+.Projects{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 390px;
+  margin: 100px 0px 200px;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.First, .Second{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 1070px;
+  height: 390px;
+  margin: 100px 5% 0px 5%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.Second{
+  transform: rotateY(180deg);
+}
+
+.flipped .Projects {
+  transform: rotateY(180deg);
+}
+
+#left{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 535px;
+  height: 390px;
+  border-radius: 100px 0px 0px 100px;
+  background-color: #FFF0D2;
+ 
+  }
+
+#right{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 535px;
+  height: 390px;
+  border-radius: 0px 100px 100px 0px;
+  background: #FFF;
+  }
+
+#btn_right{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 95px;
+  border-radius: 0px 100px 0px 0px;
+  border-top: 3px solid #F49E23;
+  border-right: 1px solid #F49E23;
+  background: #FFF0D2;
+  transition: 0.6s;
+  cursor: pointer;
+  }
+  
+#btn_middle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 200px;
+  border-top: 1px solid #F49E23;
+  border-right: 1px solid #F49E23;
+  border-bottom: 1px solid #F49E23;
+  background: #FFF0D2;
+  cursor: pointer;
+}
+
+#btn_left{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 95px;
+  border-radius: 0px 0px 100px 0px;
+  border-right: 1px solid #F49E23;
+  border-bottom: 3px solid #F49E23;
+  background: #FFF0D2;
+  transition: 0.4s;
+  cursor: pointer;
+  }
+
+}
+/* TABLET MEDIA STYLES */
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+
+  .flip_container{
+    perspective: 1000px;
+  }
+  
+  .Projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60vh;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+  }
+  
+  .First, .Second{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60vh;
+    margin: 0px 5% 0px 5%;
+    position: absolute;
+    backface-visibility: hidden;
+
+  }
+
+  .Second{
+    transform: rotateY(180deg);
+  }
+  
+  .flipped .Projects {
+    transform: rotateY(180deg);
+  }
+  
+  #left{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+    height: 390px;
+    border-radius: 100px 0px 0px 100px;
+    background-color: #000;
+   
+    }
+  
+  #right{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+    height: 390px;
+    border-radius: 0px 100px 100px 0px;
+    background: #FFF;
+   
+    }
+  
+    #btn_right{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      height: 95px;
+      border-radius: 0px 100px 0px 0px;
+      border-top: 3px solid #F49E23;
+      border-right: 1px solid #F49E23;
+      background: #FFF0D2;
+      transition: 0.6s;
+      cursor: pointer;
+      }
+      
+    #btn_middle{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      height: 200px;
+      border-top: 1px solid #F49E23;
+      border-right: 1px solid #F49E23;
+      border-bottom: 1px solid #F49E23;
+      background: #FFF0D2;
+      cursor: pointer;
+    }
+    
+    #btn_left{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      height: 95px;
+      border-radius: 0px 0px 100px 0px;
+      border-right: 1px solid #F49E23;
+      border-bottom: 3px solid #F49E23;
+      background: #FFF0D2;
+      transition: 0.4s;
+      cursor: pointer;
+      }
+
+}
+/* MOBILE MEDIA STYLES */
+
+@media screen and (max-width:767px) {
+
+  .flip_container{
+    perspective: 1000px;
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .Projects{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 120vh;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+  }
+  
+  /* Front and Back full size content  */
+
+  .First, .Second{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 120vh;
+    position: absolute;
+    backface-visibility: hidden;
+  }
+
+  .Second{
+    transform: rotateX(180deg);
+  }
+  
+  .flipped .Projects {
+    transform: rotateX(180deg);
+  }
+  
+  #left{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 535px;
+    height: 355px;
+    border-radius: 100px 0px 0px 100px;
+    background-color: #FFF0D2;
+    transform: rotate(90deg);
+    }
+  
+  #right{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 535px;
+    height: 355px;
+    border-radius: 0px 100px 100px 0px;
+    background: #FFF;
+    transform: rotate(90deg);
+    box-sizing: content-box;
+    }
+
+  .TextContainer{
+    display: flex;
+    align-items: center;
+    width: 355px;
+    height: 290px;
+  }
+
+  #btn_right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 95px;
+    border-radius: 0px 100px 0px 0px;
+    border-top: 3px solid #F49E23;
+    border-right: 1px solid #F49E23;
+    background: #FFF0D2;
+    transition: 0.6s;
+    cursor: pointer;
+    }
+    
+  #btn_middle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 150px;
+    border-top: 1px solid #F49E23;
+    border-right: 1px solid #F49E23;
+    border-bottom: 1px solid #F49E23;
+    background: #FFF0D2;
+    cursor: pointer;
+  }
+  
+  #git_logo{
+  transform: rotate(-90deg);
+  }
+
+  .ProjOneImg{
+    background-image: url('/public/assets/fitness_studio_rotated.png');
+    background-position: -20px;
+    background-size: 70%;
+    background-repeat: no-repeat;
+  }
+
+
+  .ProjTwoImg{
+    background-repeat: no-repeat;
+    background-position: right;
+    background-image: url('/public/assets/maze_level_3_rotated.png');
+  }
+
+
+
+  #btn_left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 95px;
+    border-radius: 0px 0px 100px 0px;
+    border-right: 1px solid #F49E23;
+    border-bottom: 3px solid #F49E23;
+    background: #FFF0D2;
+    transition: 0.4s;
+    cursor: pointer;
+    }
+}

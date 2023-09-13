@@ -1,0 +1,103 @@
+/* -------------Fonts CSS-------------- */
+
+.FontNavbar{
+color: #000;
+text-shadow: -2px 4px 4px rgba(0, 0, 0, 0.25);
+font-family: League Spartan;
+font-size: 25px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.FontH1{
+color: #000;
+text-shadow: -5px 5px 0px #ECE6DB;
+font-family: League Spartan;
+font-size: 45px;
+font-style: normal;
+font-weight: 800;
+line-height: 140%; /* 70px */
+margin-bottom: 111px;
+
+}
+
+.FontH2{
+color: #F49E23;
+text-align: center;
+text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.25);
+font-family: League Spartan;
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: 40px; /* 125% */
+text-transform: uppercase;
+margin-top: 100px;
+}
+
+.FontGeneral{
+color: #000;
+font-family: League Spartan;
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+line-height: 40px; /* 142.857% */
+}
+
+.FontSkills{
+color: #000;
+font-family: League Spartan;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 120% */
+text-transform: uppercase;
+margin-left: 5px;
+}
+
+.FontButton{
+color: #F49E23;
+text-align: center;
+font-family: League Spartan;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 120% */
+}
+
+.FontProjects{
+  color: #000;
+  font-family: League Spartan;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 142.857% */
+  padding: 0px 20px;
+ }
+
+/* DESKTOP MEDIA STYLES */
+
+@media screen and (min-width:1025px) {
+}
+/* TABLET MEDIA STYLES */
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+}
+/* MOBILE MEDIA STYLES */
+
+@media screen and (max-width:767px) {
+  .FontGeneral{
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 24px; /* 142.857% */
+    }
+
+  .FontH1{
+    margin-bottom: 0px;
+  }
+  .FontProjects{
+    transform: rotate(-90deg);
+    margin: 0px 10px;
+
+   }
+}
