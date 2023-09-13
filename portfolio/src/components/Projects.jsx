@@ -35,7 +35,16 @@ export default function Projects(){
         <br /><br />
         HTML, JavaScript, CSS, Bootstrap
         <br /><br /><br />
-        <a href="https://grouphbwebsite.netlify.app" target="_blank">To the site</a>
+        <a 
+        href="https://grouphbwebsite.netlify.app" 
+        target="_blank"
+        className="FontProjects"
+        style={{textDecoration: "none", cursor:"pointer"}}>
+          To the site
+          <span class="material-symbols-outlined">
+            arrow_right_alt
+            </span>
+            </a>
         </p>
         </div>
 
