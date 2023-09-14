@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.3942db08.css",
+    "main.js": "/portfolio/static/js/main.cc04b53c.js",
+    "static/media/fitness_studio.png": "/portfolio/static/media/fitness_studio.35936c35bb9d72ae1bc8.png",
+    "static/media/fitness_studio_rotated.png": "/portfolio/static/media/fitness_studio_rotated.fabaec54dbd0de50b018.png",
+    "static/media/maze_level_3.png": "/portfolio/static/media/maze_level_3.3ca150b857e3de8f4698.png",
+    "static/media/maze_level_3_rotated.png": "/portfolio/static/media/maze_level_3_rotated.4ab8c8f08e4ed3bf99d1.png",
+    "index.html": "/portfolio/index.html",
+    "main.3942db08.css.map": "/portfolio/static/css/main.3942db08.css.map",
+    "main.cc04b53c.js.map": "/portfolio/static/js/main.cc04b53c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3942db08.css",
+    "static/js/main.cc04b53c.js"
+  ]
+}
