@@ -23,7 +23,7 @@ export default function Skills(){
       <SkillBox 
       logo='html'
       name='html5'
-      percentage='80'/>
+      percentage='60'/>
       <SkillBox 
       logo='css'
       name='css3'
@@ -31,11 +31,11 @@ export default function Skills(){
       <SkillBox 
       logo='js'
       name='javascript'
-      percentage='60'/>
+      percentage='50'/>
       <SkillBox 
       logo='react'
       name='react'
-      percentage='50'/>
+      percentage='40'/>
        </div>
 
     </div>
