@@ -1,3 +1,8 @@
+/* Remove tap highlight for clickable elements */
+a, button, input, label, select, textarea, span, [role="button"] {
+  -webkit-tap-highlight-color: transparent; /* Webkit browsers (Safari, Chrome) */
+  tap-highlight-color: transparent; /* CSS4 standard */
+}
 
 body{
   margin: auto;
