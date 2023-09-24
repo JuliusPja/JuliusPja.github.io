@@ -52,6 +52,13 @@ export default function Navbar() {
             id="navbar"
             className={menu.clicked ? "#navbar active" : "#navbar"}
           >
+            <li
+              onClick={handleMenuClick}
+              className="material-symbols-outlined"
+              id="icon_close"
+            >
+              close
+            </li>
             <li>
               <Link
                 to="home"
@@ -113,11 +120,12 @@ export default function Navbar() {
           </ul>
           {menu.clicked ? (
             <span
+            id="close_area"
               onClick={handleMenuClick}
-              className="material-symbols-outlined"
-              id="icon_close"
+              // className="material-symbols-outlined"
+              // id="icon_close"
             >
-              close
+              {/* close */}
             </span>
           ) : (
             <span
