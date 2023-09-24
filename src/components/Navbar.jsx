@@ -2,7 +2,7 @@ import "../App.css";
 import "./Navbar.css";
 import React, { useState, useEffect } from "react";
 // import { Link } from "react-router-dom";
-import { Link, Element } from "react-scroll";
+import { Link } from "react-scroll";
 
 export default function Navbar() {
   const [activeSection, setActiveSection] = useState(null);

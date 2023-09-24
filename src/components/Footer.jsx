@@ -16,7 +16,8 @@ export default function Footer(){
         id="email_link" 
         className="FontGeneral"
         href="mailto:juliuspja@yahoo.com" 
-        target="_blank">
+        target="_blank"
+        rel="noopener noreferrer">
         <span id="mail_icon_container"/>
        juliuspja@yahoo.com
       </a>

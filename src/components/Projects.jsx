@@ -38,6 +38,7 @@ export default function Projects(){
         <a 
         href="https://grouphbwebsite.netlify.app" 
         target="_blank"
+        rel="noopener noreferrer"
         className="FontProjects"
         style={{textDecoration: "none", cursor:"pointer"}}>
           To the site
@@ -53,7 +54,11 @@ export default function Projects(){
       <img id="btn_arrow" src="./assets/icons8-next-64.png" alt="next" />
       </div>
 
-      <a id="btn_middle" href="https://github.com/JuliusPja/Bootstrap-workshop" target="_blank">
+      <a 
+      id="btn_middle" 
+      href="https://github.com/JuliusPja/Bootstrap-workshop" 
+      target="_blank" 
+      rel="noopener noreferrer">
         <img id="git_logo" src="./assets/icons8-github-64.png" alt="github" />
       </a>
 
@@ -91,7 +96,10 @@ export default function Projects(){
       <img id="btn_arrow" src="./assets/icons8-next-64.png" alt="next" />
       </div>
 
-      <a id="btn_middle" href="https://github.com/JuliusPja/Maze-runner" target="_blank">
+      <a id="btn_middle" 
+      href="https://github.com/JuliusPja/Maze-runner" 
+      target="_blank" 
+      rel="noopener noreferrer">
         <img id="git_logo" src="./assets/icons8-github-64.png" alt="github" />
       </a>
 

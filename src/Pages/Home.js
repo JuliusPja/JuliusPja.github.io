@@ -5,16 +5,11 @@ import Skills from "../components/Skills";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
-import { Link, Element } from "react-scroll";
+import { Element } from "react-scroll";
 
 // import { useState } from "react";
 
 export default function Home() {
-  // const [currentView, setCurrentView] = useState('view'); // Initial view
-
-  // const changeView = (view) => {
-  //   setCurrentView(view);
-  // };
 
   return (
     <div>
