@@ -70,11 +70,13 @@
 /* DESKTOP MEDIA STYLES */
 
 @media screen and (min-width:1025px) {
-
+  nav{
+    display: none;
+  }
   #icon_menu{
     display: none;
   }
-  #icon_close{
+  #navbar li#icon_close{
     display: none;
   }
 }
@@ -85,7 +87,7 @@
   #icon_menu{
     display: none;
   }
-  #icon_close{
+  #navbar li#icon_close{
     display: none;
   }
 
